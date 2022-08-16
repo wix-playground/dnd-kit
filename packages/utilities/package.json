@@ -31,7 +31,15 @@
   "peerDependencies": {
     "react": ">=16.8.0"
   },
+  "wix": {
+    "validations": {
+      "source": [
+        "lint"
+      ]
+    }
+  },
   "publishConfig": {
-    "access": "public"
+    "registry": "http://npm.dev.wixpress.com/",
+    "versionBumpStrategy": "manual"
   }
 }

@@ -36,7 +36,15 @@
   "devDependencies": {
     "@dnd-kit/core": "6.1.0-wix.0"
   },
+  "wix": {
+    "validations": {
+      "source": [
+        "lint"
+      ]
+    }
+  },
   "publishConfig": {
-    "access": "public"
+    "registry": "http://npm.dev.wixpress.com/",
+    "versionBumpStrategy": "manual"
   }
 }

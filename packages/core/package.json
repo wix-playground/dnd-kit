@@ -34,7 +34,15 @@
     "@dnd-kit/utilities": "3.3.0-wix.0",
     "tslib": "^2.0.0"
   },
+  "wix": {
+    "validations": {
+      "source": [
+        "lint"
+      ]
+    }
+  },
   "publishConfig": {
-    "access": "public"
+    "registry": "http://npm.dev.wixpress.com/",
+    "versionBumpStrategy": "manual"
   }
 }
