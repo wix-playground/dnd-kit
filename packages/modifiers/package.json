@@ -38,11 +38,6 @@
     "artifact": {
       "groupId": "com.wixpress",
       "artifactId": "dnd-kit-modifiers"
-    },
-    "validations": {
-      "source": [
-        "lint"
-      ]
     }
   },
   "publishConfig": {

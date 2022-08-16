@@ -33,11 +33,6 @@
     "artifact": {
       "groupId": "com.wixpress",
       "artifactId": "dnd-kit-accessibility"
-    },
-    "validations": {
-      "source": [
-        "lint"
-      ]
     }
   },
   "publishConfig": {

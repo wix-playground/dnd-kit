@@ -34,11 +34,6 @@
     "artifact": {
       "groupId": "com.wixpress",
       "artifactId": "dnd-kit-utilities"
-    },
-    "validations": {
-      "source": [
-        "lint"
-      ]
     }
   },
   "publishConfig": {

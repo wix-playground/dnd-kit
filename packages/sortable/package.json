@@ -39,11 +39,6 @@
     "artifact": {
       "groupId": "com.wixpress",
       "artifactId": "dnd-kit-sortable"
-    },
-    "validations": {
-      "source": [
-        "lint"
-      ]
     }
   },
   "publishConfig": {

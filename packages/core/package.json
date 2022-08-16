@@ -37,11 +37,6 @@
     "artifact": {
       "groupId": "com.wixpress",
       "artifactId": "dnd-kit-core"
-    },
-    "validations": {
-      "source": [
-        "lint"
-      ]
     }
   },
   "publishConfig": {
