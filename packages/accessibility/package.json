@@ -31,6 +31,10 @@
     "tslib": "^2.0.0"
   },
   "wix": {
+    "artifact": {
+      "groupId": "com.wixpress",
+      "artifactId": "dnd-kit-accessibility"
+    },
     "validations": {
       "source": [
         "lint"

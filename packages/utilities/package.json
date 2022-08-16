@@ -32,6 +32,10 @@
     "react": ">=16.8.0"
   },
   "wix": {
+    "artifact": {
+      "groupId": "com.wixpress",
+      "artifactId": "dnd-kit-utilities"
+    },
     "validations": {
       "source": [
         "lint"
