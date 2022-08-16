@@ -52,22 +52,22 @@ export const sortableKeyboardCoordinates: KeyboardCoordinateGetter = (
 
       switch (event.code) {
         case KeyboardCode.Down:
-          if (collisionRect.top < rect.top) {
+          if (rect.top - collisionRect.top > 0.1) {
             filteredContainers.push(entry);
           }
           break;
         case KeyboardCode.Up:
-          if (collisionRect.top > rect.top) {
+          if (collisionRect.top - rect.top > 0.1) {
             filteredContainers.push(entry);
           }
           break;
         case KeyboardCode.Left:
-          if (collisionRect.left > rect.left) {
+          if (collisionRect.left - rect.left > 0.1) {
             filteredContainers.push(entry);
           }
           break;
         case KeyboardCode.Right:
-          if (collisionRect.left < rect.left) {
+          if (rect.left - collisionRect.left > 0.1) {
             filteredContainers.push(entry);
           }
           break;
