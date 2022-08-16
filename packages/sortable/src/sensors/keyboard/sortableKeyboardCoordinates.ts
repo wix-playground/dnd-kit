@@ -17,6 +17,9 @@ const directions: string[] = [
   KeyboardCode.Left,
 ];
 
+// Check how the public API can expose this for configuration
+const CONTAINER_DISTANCE_THRESHOLD = 0.1;
+
 export const sortableKeyboardCoordinates: KeyboardCoordinateGetter = (
   event,
   {
@@ -52,22 +55,22 @@ export const sortableKeyboardCoordinates: KeyboardCoordinateGetter = (
 
       switch (event.code) {
         case KeyboardCode.Down:
-          if (collisionRect.top < rect.top) {
+          if (rect.top - collisionRect.top > CONTAINER_DISTANCE_THRESHOLD) {
             filteredContainers.push(entry);
           }
           break;
         case KeyboardCode.Up:
-          if (collisionRect.top > rect.top) {
+          if (collisionRect.top - rect.top > CONTAINER_DISTANCE_THRESHOLD) {
             filteredContainers.push(entry);
           }
           break;
         case KeyboardCode.Left:
-          if (collisionRect.left > rect.left) {
+          if (collisionRect.left - rect.left > CONTAINER_DISTANCE_THRESHOLD) {
             filteredContainers.push(entry);
           }
           break;
         case KeyboardCode.Right:
-          if (collisionRect.left < rect.left) {
+          if (rect.left - collisionRect.left > CONTAINER_DISTANCE_THRESHOLD) {
             filteredContainers.push(entry);
           }
           break;
