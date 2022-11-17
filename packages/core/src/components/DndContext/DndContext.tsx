@@ -612,7 +612,7 @@ export const DndContext = memo(function DndContext({
     scrollAdjustedTranslate,
   ]);
 
-  const autoScrollerState = useAutoScroller({
+  const autoScrollState = useAutoScroller({
     ...autoScrollOptions,
     delta: translate,
     draggingRect: collisionRect,
@@ -662,7 +662,7 @@ export const DndContext = memo(function DndContext({
     measuringConfiguration,
     measuringScheduled,
     windowRect,
-    autoScrollerState,
+    autoScrollState,
   ]);
 
   const internalContext = useMemo(() => {
