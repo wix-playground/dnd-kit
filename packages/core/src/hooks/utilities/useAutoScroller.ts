@@ -74,25 +74,28 @@ function useAutoScrollInterval() {
   const [setInterval, clearInterval] = useInterval();
   const [state, setState] = useState(initialAutoScrollState);
 
-  return {
-    setAutoScrollInterval: (
-      listener: Function,
-      duration: number,
-      direction: ScrollDirection
-    ) => {
+  const setAutoScrollInterval = useCallback(
+    (listener: Function, duration: number, direction: ScrollDirection) => {
       setInterval(listener, duration);
       setState({
         isScrolling: true,
         direction,
       });
     },
-    clearAutoScrollInterval: () => {
-      clearInterval();
-      setState({
-        isScrolling: true,
-        direction: {x: 0, y: 0},
-      });
-    },
+    [setInterval]
+  );
+
+  const clearAutoScrollInterval = useCallback(() => {
+    clearInterval();
+    setState({
+      isScrolling: true,
+      direction: {x: 0, y: 0},
+    });
+  }, [clearInterval]);
+
+  return {
+    setAutoScrollInterval,
+    clearAutoScrollInterval,
     state,
   };
 }
