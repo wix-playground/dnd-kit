@@ -88,7 +88,7 @@ function useAutoScrollInterval() {
   const clearAutoScrollInterval = useCallback(() => {
     clearInterval();
     setState({
-      isScrolling: true,
+      isScrolling: false,
       direction: {x: 0, y: 0},
     });
   }, [clearInterval]);
