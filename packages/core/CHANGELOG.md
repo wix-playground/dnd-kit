@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-wix.4](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/core@6.1.0-wix.3...@dnd-kit/core@6.1.0-wix.4) (2022-11-17)
+
+
+### Bug Fixes
+
+* `isScrolling` false ([#8](https://github.com/clauderic/dnd-kit/issues/8)) ([53f35c8](https://github.com/clauderic/dnd-kit/commit/53f35c8148b21d7c84fb7190abaee7c69e43282e))
+
+
+
+
+
 # [6.1.0-wix.3](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/core@6.1.0-wix.2...@dnd-kit/core@6.1.0-wix.3) (2022-11-17)
 
 
