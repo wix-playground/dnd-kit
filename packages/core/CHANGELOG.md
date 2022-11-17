@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-wix.3](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/core@6.1.0-wix.2...@dnd-kit/core@6.1.0-wix.3) (2022-11-17)
+
+
+### Bug Fixes
+
+* **useAutoScroller:** Missing `React.useCallback` ([#7](https://github.com/clauderic/dnd-kit/issues/7)) ([82da7f9](https://github.com/clauderic/dnd-kit/commit/82da7f9bbd388dd7b5a44d78097f01e6a57576f6))
+
+
+
+
+
 # [6.1.0-wix.2](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/core@6.1.0-wix.1...@dnd-kit/core@6.1.0-wix.2) (2022-11-17)
 
 **Note:** Version bump only for package @dnd-kit/core
