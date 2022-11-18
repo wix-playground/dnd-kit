@@ -304,7 +304,25 @@ export const DndContext = memo(function DndContext({
           pointerCoordinates,
         })
       : null;
-  const overId = getFirstCollision(collisions, 'id');
+
+  const autoScrollState = useAutoScroller({
+    ...autoScrollOptions,
+    delta: translate,
+    draggingRect: collisionRect,
+    pointerCoordinates,
+    scrollableAncestors,
+    scrollableAncestorRects,
+  });
+
+  const overIdRef = useRef<UniqueIdentifier | null>();
+
+  const overId =
+    autoScrollState.isScrolling && autoScrollOptions.freeze
+      ? overIdRef.current
+      : getFirstCollision(collisions, 'id');
+
+  overIdRef.current = overId;
+
   const [over, setOver] = useState<Over | null>(null);
 
   // When there is no drag overlay used, we need to account for the
@@ -611,15 +629,6 @@ export const DndContext = memo(function DndContext({
     scrollableAncestors,
     scrollAdjustedTranslate,
   ]);
-
-  const autoScrollState = useAutoScroller({
-    ...autoScrollOptions,
-    delta: translate,
-    draggingRect: collisionRect,
-    pointerCoordinates,
-    scrollableAncestors,
-    scrollableAncestorRects,
-  });
 
   const publicContext = useMemo(() => {
     const context: PublicContextDescriptor = {
