@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-wix.5](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/core@6.1.0-wix.4...@dnd-kit/core@6.1.0-wix.5) (2022-11-20)
+
+
+### Features
+
+* Skip collisions when scrolling ([#10](https://github.com/clauderic/dnd-kit/issues/10)) ([de15f10](https://github.com/clauderic/dnd-kit/commit/de15f10b2ac8ab82ad88669b45fffdbc3f7c05b5))
+
+
+
+
+
 # [6.1.0-wix.4](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/core@6.1.0-wix.3...@dnd-kit/core@6.1.0-wix.4) (2022-11-17)
 
 
