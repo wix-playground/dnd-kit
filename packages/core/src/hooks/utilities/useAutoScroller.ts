@@ -29,6 +29,7 @@ export interface Options {
     x: number;
     y: number;
   };
+  freeze?: boolean;
 }
 
 interface Arguments extends Options {
