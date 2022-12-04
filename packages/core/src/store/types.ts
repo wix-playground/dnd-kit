@@ -1,5 +1,5 @@
 import type {MutableRefObject} from 'react';
-import type {DeepRequired} from '@dnd-kit/utilities';
+import type {DeepRequired, Transform} from '@dnd-kit/utilities';
 
 import type {SyntheticListeners} from '../hooks/utilities';
 import type {Collision} from '../utilities/algorithms';
@@ -98,6 +98,7 @@ export interface PublicContextDescriptor {
   measuringScheduled: boolean;
   windowRect: ClientRect | null;
   autoScrollState: AutoScrollState;
+  dragOverlayTransformRef: MutableRefObject<Transform | undefined>;
 }
 
 export interface InternalContextDescriptor {

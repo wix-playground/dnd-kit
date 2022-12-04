@@ -232,6 +232,7 @@ export const DndContext = memo(function DndContext({
   const dragOverlay = useDragOverlayMeasuring({
     measure: measuringConfiguration.dragOverlay.measure,
   });
+  const dragOverlayTransformRef = useRef<Transform>();
 
   // Use the rect of the drag overlay if it is mounted
   const draggingNode = dragOverlay.nodeRef.current ?? activeNode;
@@ -650,6 +651,7 @@ export const DndContext = memo(function DndContext({
       measuringScheduled,
       windowRect,
       autoScrollState,
+      dragOverlayTransformRef,
     };
 
     return context;

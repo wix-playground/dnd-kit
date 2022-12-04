@@ -51,6 +51,7 @@ export const DragOverlay = React.memo(
       scrollableAncestors,
       scrollableAncestorRects,
       windowRect,
+      dragOverlayTransformRef,
     } = useDndContext();
     const transform = useContext(ActiveDraggableContext);
     const key = useKey(active?.id);
@@ -67,6 +68,8 @@ export const DragOverlay = React.memo(
       transform,
       windowRect,
     });
+    dragOverlayTransformRef.current = modifiedTransform;
+
     const initialRect = useInitialValue(activeNodeRect);
     const dropAnimation = useDropAnimation({
       config: dropAnimationConfig,
