@@ -36,6 +36,9 @@ export const defaultPublicContext: PublicContextDescriptor = {
       y: 0,
     },
   },
+  dragOverlayTransformRef: {
+    current: undefined,
+  },
 };
 
 export const defaultInternalContext: InternalContextDescriptor = {
