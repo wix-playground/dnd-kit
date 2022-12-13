@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-wix.6](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/modifiers@6.1.0-wix.5...@dnd-kit/modifiers@6.1.0-wix.6) (2022-12-13)
+
+**Note:** Version bump only for package @dnd-kit/modifiers
+
+
+
+
+
 # [6.1.0-wix.5](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/modifiers@6.1.0-wix.4...@dnd-kit/modifiers@6.1.0-wix.5) (2022-11-20)
 
 **Note:** Version bump only for package @dnd-kit/modifiers

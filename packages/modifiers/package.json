@@ -1,6 +1,6 @@
 {
   "name": "@dnd-kit/modifiers",
-  "version": "6.1.0-wix.5",
+  "version": "6.1.0-wix.6",
   "description": "Translate modifier presets for use with `@dnd-kit` packages.",
   "author": "Claudéric Demers",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "dist"
   ],
   "dependencies": {
-    "@dnd-kit/utilities": "3.3.0-wix.1",
+    "@dnd-kit/utilities": "3.3.0-wix.2",
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
