@@ -5,3 +5,4 @@ export {restrictToFirstScrollableAncestor} from './restrictToFirstScrollableAnce
 export {restrictToVerticalAxis} from './restrictToVerticalAxis';
 export {restrictToWindowEdges} from './restrictToWindowEdges';
 export {snapCenterToCursor} from './snapCenterToCursor';
+export {restrictToBoundingRect} from './utilities/restrictToBoundingRect';
