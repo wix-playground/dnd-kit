@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-wix.7](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/modifiers@6.1.0-wix.6...@dnd-kit/modifiers@6.1.0-wix.7) (2022-12-25)
+
+
+### Features
+
+* **modifiers:** Re-export `restrictToBoundingRect` ([#12](https://github.com/clauderic/dnd-kit/issues/12)) ([69c60c6](https://github.com/clauderic/dnd-kit/commit/69c60c63bfae1c0bb381d9d98f4057a556dfb31d))
+
+
+
+
+
 # [6.1.0-wix.6](https://github.com/clauderic/dnd-kit/compare/@dnd-kit/modifiers@6.1.0-wix.5...@dnd-kit/modifiers@6.1.0-wix.6) (2022-12-13)
 
 **Note:** Version bump only for package @dnd-kit/modifiers
